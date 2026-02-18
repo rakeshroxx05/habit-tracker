@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Habit Tracker Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌱 Habit Tracker Pro</h1>
+  <button onclick="toggleTheme()">🌙</button>
+</header>
+
+<section class="add-habit">
+  <input type="text" id="habitInput" placeholder="Habit name">
+  <select id="category">
+    <option>Health</option>
+    <option>Study</option>
+    <option>Fitness</option>
+    <option>Personal</option>
+  </select>
+  <button onclick="addHabit()">Add Habit</button>
+</section>
+
+<section class="stats">
+  <div>🔥 Streak: <span id="streak">0</span></div>
+  <div>📊 Progress: <span id="progress">0</span>%</div>
+</section>
+
+<section id="habits"></section>
+
+<h2>📅 Calendar Heatmap</h2>
+<div id="heatmap"></div>
+
+<h2>📈 Weekly Progress</h2>
+<canvas id="chart" width="400" height="200"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
